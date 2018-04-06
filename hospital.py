@@ -41,7 +41,7 @@ class Hospital(object):
             #assign bed number
             for i in range(0, len(self.beds)):
                 if self.beds[i]["Available"]:
-                    patient.bed_num = self.beds[i]["bed_id"]   #why not self.patient.bed_num?
+                    patient.bed_num = self.beds[i]["bed_id"]   
                     self.beds[i]["Available"] = False
                     break
             self.patients.append(patient)
